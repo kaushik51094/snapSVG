@@ -16,6 +16,7 @@ var MainView = Backbone.View.extend({
 
 	render: function() {
 		var self = this;
+		_.each(window.sElem.selectAll('circle'), function(circleElem) { circleElem.remove(); });
 		_.each(this.allDataPoints, function(dataPoint) {
 			self.drawHeatPoint(dataPoint);
 		});
