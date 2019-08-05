@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            custom map
+        </title>
+        <link rel='stylesheet' href="css/main.css" />
+    </head>
+    <body>
+        <svg id="store-map">
+            <path id="lineAB" d="M 100 100 l 0 300 l 10 0 l 0 -300 l -10 0" fill="white" />
+            <path id="lineBC" d="M 100 400 l 300 0 l 0 -10 l -300 0 l 0 10" fill="white" />
+            <path id="lineCD" d="M 400 400 l 0 -300 l -10 0 l 0 300 l 10 0" fill="white" />
+            <path id="lineDA" d="M 400 100 l -300 0 l 0 10 l 300 0 l 0 -10" fill="white" />
+            <path id="lineEF" d="M 250 100 l 0 300 l 10 0 l 0 -300 l -10 0" fill="white"/>
+            <path id="lineGH" d="M 100 200 l 300 0 l 0 10 l -300 0 l 0 -10" fill="white"/>
+            <path id="lineIJ" d="M 100 300 l 300 0 l 0 10 l -300 0 l 0 -10" fill="white"/>
+            <g font-size="16" font-family="sans-serif" fill="black" stroke="none"
+            text-anchor="middle">
+                <text x="100" y="100" dy="-30">A(100,100)</text>
+                <text x="100" y="400" dy="30">B(100,400)</text>
+                <text x="400" y="400" dy="30">C(400,400)</text>
+                <text x="400" y="100" dy="-30">D(400,100)</text>
+                <text x="250" y="100" dy="-30">E(250,100)</text>
+                <text x="250" y="400" dy="30">F(250,400)</text>
+                <text x="100" y="200" dx="-50">G(100,200)</text>
+                <text x="400" y="200" dx="50">H(400,200)</text>
+                <text x="100" y="300" dx="-50">I(100,300)</text>
+                <text x="400" y="300" dx="50">J(400,300)</text>
+            </g>
+        </svg>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h3>Input values -</h3>
+        <input id="xcoord" type="number" placeholder="x co-ordinate"/><br/>
+        <input id="ycoord" type="number" placeholder="y co-ordinate"/><br/>
+        <input id="crowdValue" type="number" placeholder="value"/><br/>
+        <button id="addInputToSvg">
+            Add input value
+        </button>
+
+        <script src="js/jquery-1.9.0.min.js"></script>
+        <script src="js/underscore.js"></script>
+        <script src="js/backbone.js"></script>
+        <script src="js/seedrandom.js"></script>
+        <script src="js/snap.svg.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
